@@ -1,0 +1,246 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  height: 100vh;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--clr-stone100);
+  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+}
+body > * {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+span,
+h1, h2, h3, h4, h5, h6,
+p {
+  display: inline-block;
+  font-weight: 400;
+}
+
+table {
+  font-family: inherit;
+  font-size: inherit;
+  border-collapse: collapse;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-size: inherit;
+  border: none;
+  font-family: inherit;
+  background-color: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  font-size: inherit;
+  border: none;
+  font-family: inherit;
+  line-height: 1.5;
+  background-color: inherit;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+fieldset {
+  border: none;
+}
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-stone100: hsl(30, 54%, 90%);
+  --clr-stone150: hsl(30, 18%, 87%);
+  --clr-stone600: hsl(30, 10%, 34%);
+  --clr-stone900: hsl(24, 5%, 18%);
+  --clr-brown: hsl(14, 45%, 36%);
+  --clr-rose800: hsl(332, 51%, 32%);
+  --clr-rose50: hsl(330, 100%, 98%);
+  /* @link https://utopia.fyi/type/calculator?c=375,16,1.2,900,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step--2: clamp(0.6944rem, 0.619rem + 0.3217vw, 0.8rem);
+  --step--1: clamp(0.8333rem, 0.7143rem + 0.5079vw, 1rem);
+  --step-0: clamp(1rem, 0.8214rem + 0.7619vw, 1.25rem);
+  --step-1: clamp(1.2rem, 0.9411rem + 1.1048vw, 1.5625rem);
+  --step-2: clamp(1.44rem, 1.0735rem + 1.5638vw, 1.9531rem);
+  --step-3: clamp(1.728rem, 1.2184rem + 2.1742vw, 2.4414rem);
+  --step-4: clamp(2.0736rem, 1.3749rem + 2.9811vw, 3.0518rem);
+  --step-5: clamp(2.4883rem, 1.5409rem + 4.0423vw, 3.8147rem);
+}
+
+h1 {
+  color: var(--clr-stone900);
+  line-height: 1;
+  font-size: var(--step-4);
+}
+
+h2 {
+  color: var(--clr-brown);
+  font-weight: 500;
+  font-size: var(--step-3);
+}
+
+h3 {
+  color: var(--clr-rose800);
+  font-weight: 600;
+  font-size: var(--step-2);
+}
+
+hr {
+  border: none;
+  border-bottom: 2px solid var(--clr-stone150);
+}
+
+h1, h2 {
+  font-family: "Young Serif", sans-serif;
+}
+
+ul, ol {
+  padding-left: 18px;
+}
+
+ul li::marker {
+  color: var(--clr-brown);
+  font-size: 0.7rem;
+}
+
+ol li::marker {
+  color: var(--clr-brown);
+  font-weight: 600;
+}
+
+li {
+  color: var(--clr-stone600);
+  font-weight: 400;
+  padding-left: 15px;
+  font-size: var(--step-0);
+  line-height: 1.5;
+  max-width: 55ch;
+}
+li {
+  margin-bottom: 15px;
+}
+
+p {
+  color: var(--clr-stone600);
+  font-weight: 500;
+  font-size: var(--step-0);
+}
+
+img {
+  border-radius: 10px;
+  max-width: 840px;
+  width: 100%;
+  margin-inline: auto;
+}
+@media (min-width: 840px) {
+  img {
+    padding-top: clamp(0.0625rem, -25.3125rem + 48.3333333333vw, 1.875rem);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+main {
+  background-color: var(--clr-white);
+  max-width: 900px;
+  margin-inline: auto;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  main {
+    margin-block: 5rem;
+  }
+}
+
+.main {
+  display: grid;
+  align-items: normal;
+  justify-content: normal;
+  gap: 1.3rem;
+  text-align: normal;
+  padding: 35px 30px;
+}
+.main .preparation {
+  display: grid;
+  align-items: normal;
+  justify-content: normal;
+  gap: 1rem;
+  text-align: normal;
+  background-color: var(--clr-rose50);
+  padding: 25px 23px;
+  border-radius: 10px;
+}
+.main table tr:not(:last-child) {
+  border-bottom: 1px solid var(--clr-stone150) !important;
+}
+.main table td {
+  padding-block: 15px;
+}
+.main table td:first-child {
+  padding-left: 30px;
+  color: var(--clr-stone600);
+}
+.main table td:last-child {
+  color: var(--clr-rose800);
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+h1 {
+    color: var(--clr-stone900);
+    line-height: 1;
+    font-size: var(--step-4);
+}
+h2 {
+    color: var(--clr-brown);
+    font-weight: 500;
+    font-size: var(--step-3);
+}
+h3 {
+    color: var(--clr-rose800);
+    font-weight: 600;
+    font-size: var(--step-2);
+}
+hr {
+    border: none;
+    border-bottom: 2px solid var(--clr-stone150);
+}
+h1, h2 {
+    font-family: 'Young Serif', sans-serif;
+}
+
+ul, ol {
+    padding-left: 18px;
+}
+ul li::marker {
+    color: var(--clr-brown);
+    font-size: 0.7rem;
+}
+ol li::marker {
+    color: var(--clr-brown);
+    font-weight: 600;
+}
+
+li {
+    color: var(--clr-stone600);
+    font-weight: 400;
+    padding-left: 15px;
+    font-size:  var(--step-0);
+    line-height: 1.5;
+    max-width: 55ch;
+    & {
+        margin-bottom: 15px;
+    }
+}
+p {
+    color: var(--clr-stone600);
+    font-weight: 500;
+    font-size: var(--step-0);
+}
