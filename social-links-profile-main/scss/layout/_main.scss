@@ -1,0 +1,40 @@
+main {
+    margin-block: 10rem;
+    margin-inline: auto;
+    border-radius: 10px;
+    background-color: var(--clr-grey800);
+    padding: 2.5rem;
+
+    display: grid;
+    gap: 1.5rem;
+    max-width: calc(375.2px - 40px);
+
+    img {
+        width: 6rem;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .profile {
+        display: grid;
+        gap: 1.4rem;
+        text-align: center;
+    }
+    .socials {
+        display: grid;
+        gap: 1rem;
+
+        button {
+            padding-block: 1rem;
+            border-radius: 10px;
+            color: var(--clr-white);
+            font-weight: 800;
+            background-color: var(--clr-grey700);
+
+            &:hover {
+                background-color: var(--clr-green);
+                color: var(--clr-grey900);
+            }
+        }
+    }
+}

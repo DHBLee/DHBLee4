@@ -1,0 +1,15 @@
+h1 {
+    font-weight: 600;
+    color: var(--clr-white);
+    font-size: 1.7rem;
+}
+
+p {
+    color: var(--clr-white);
+    font-size: 1rem;
+}
+p.location {
+    color: var(--clr-green);
+    font-weight: 600;
+    margin-top: -10px;
+}
