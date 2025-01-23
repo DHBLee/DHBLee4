@@ -1,0 +1,20 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-pink: hsl(333, 80%, 67%);
+    --clr-lightMagenta: hsl(300, 24%, 96%);
+    --clr-magenta: hsl(303, 10%, 53%);
+    --clr-darkMagenta: hsl(300, 43%, 22%);
+
+    /* @link https://utopia.fyi/type/calculator?c=375,15,1.2,1440,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+
+    --step--2: clamp(0.651rem, 0.6268rem + 0.1036vw, 0.72rem);
+    --step--1: clamp(0.7813rem, 0.7394rem + 0.1784vw, 0.9rem);
+    --step-0: clamp(0.9375rem, 0.8715rem + 0.2817vw, 1.125rem);
+    --step-1: clamp(1.125rem, 1.026rem + 0.4225vw, 1.4063rem);
+    --step-2: clamp(1.35rem, 1.2064rem + 0.6127vw, 1.7578rem);
+    --step-3: clamp(1.62rem, 1.4167rem + 0.8673vw, 2.1973rem);
+    --step-4: clamp(1.944rem, 1.6614rem + 1.2058vw, 2.7466rem);
+    --step-5: clamp(2.3328rem, 1.9453rem + 1.6532vw, 3.4332rem);
+
+}

@@ -1,0 +1,27 @@
+h1 {
+    color: var(--clr-darkMagenta);
+    font-weight: 700;
+    font-size: var(--step-5);
+    max-width: 15ch;
+
+    @media(max-width: 649.8px) {
+        margin: auto;
+    }
+}
+p {
+    color: var(--clr-magenta);
+    font-weight: 500;
+    font-size: var(--step-0);
+}
+span {
+    font-size: var(--step-0);
+}
+h6 {
+    color: var(--clr-white);
+    font-size: var(--step-0);
+    font-weight: 600;
+}
+h5 {
+    color: var(--clr-pink);
+    font-size: var(--step-0);
+}
