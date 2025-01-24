@@ -119,7 +119,7 @@ h1 {
   color: var(--clr-darkpurple);
 }
 h1::before {
-  content: url("/faq-accordion-main/assets/images/icon-star.svg");
+  content: url("./assets/images/icon-star.svg");
   transform: scale(0.7);
   margin-left: -7px;
 }
@@ -138,7 +138,7 @@ p {
 
 .background {
   position: absolute;
-  background-image: url("/faq-accordion-main/assets/images/background-pattern-mobile.svg");
+  background-image: url("./assets/images/background-pattern-mobile.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -148,7 +148,7 @@ p {
 }
 @media (min-width: 768px) {
   .background {
-    background-image: url("/faq-accordion-main/assets/images/background-pattern-desktop.svg");
+    background-image: url("./assets/images/background-pattern-desktop.svg");
   }
 }
 
