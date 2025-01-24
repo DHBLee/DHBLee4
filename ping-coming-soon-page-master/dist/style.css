@@ -1,0 +1,237 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+  height: 100vh;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  min-height: 100%;
+  height: 100vh;
+}
+body > * {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+svg {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+span,
+h1, h2, h3, h4, h5, h6,
+p {
+  display: inline-block;
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input {
+  font-size: inherit;
+  border: none;
+  font-family: inherit;
+  background-color: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  font-size: inherit;
+  border: none;
+  font-family: inherit;
+  line-height: 1.5;
+  background-color: inherit;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+fieldset {
+  border: none;
+}
+
+:root {
+  --clr-blue: hsl(223, 87%, 63%);
+  --clr-lightBlue: hsl(223, 100%, 88%);
+  --clr-red: hsl(354, 100%, 66%);
+  --clr-gray: hsl(0, 0%, 59%);
+  --clr-darkblue: hsl(209, 33%, 12%);
+  /* @link https://utopia.fyi/type/calculator?c=375,20,1.067,700,22,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+  --step--2: clamp(0.88rem, 1.3494rem + -1.073vw, 1.0979rem);
+  --step--1: clamp(1.1rem, 1.254rem + -0.352vw, 1.1715rem);
+  --step-0: clamp(1.25rem, 1.1058rem + 0.6154vw, 1.375rem);
+  --step-1: clamp(1.3338rem, 0.8895rem + 1.8954vw, 1.7188rem);
+  --step-2: clamp(1.4231rem, 0.5862rem + 3.5708vw, 2.1484rem);
+  --step-3: clamp(1.5185rem, 0.1718rem + 5.7457vw, 2.6855rem);
+  --step-4: clamp(1.6202rem, -0.3837rem + 8.5501vw, 3.3569rem);
+  --step-5: clamp(1.7287rem, -1.1183rem + 12.1473vw, 4.1962rem);
+}
+
+h1 {
+  font-size: clamp(1rem, -0.7307692308rem + 7.3846153846vw, 2.5rem);
+  color: var(--clr-gray);
+}
+h1 span {
+  color: var(--clr-darkblue);
+  font-weight: 600;
+}
+
+p {
+  color: var(--clr-darkblue);
+  font-size: clamp(0.6rem, 0.1384615385rem + 1.9692307692vw, 1rem);
+}
+
+main {
+  max-width: 700px;
+  width: calc(100% - 60px);
+  display: grid;
+  gap: 1rem;
+  padding-block: 2rem;
+  place-items: center;
+  text-align: center;
+}
+main #logo {
+  width: clamp(3rem, 0.6923076923rem + 9.8461538462vw, 5rem);
+  margin-block: 1rem;
+}
+main #hidden {
+  display: none;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-block: 1rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  main form {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+main form .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.3rem;
+}
+main form #email {
+  border: 1px solid var(--clr-gray);
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  font-size: clamp(0.5rem, 0.2692307692rem + 0.9846153846vw, 0.7rem);
+  max-width: 100%;
+  width: 100%;
+}
+main form #email.invalid {
+  border-color: var(--clr-red);
+}
+main form #email:focus {
+  border-color: var(--clr-blue);
+}
+main form #error {
+  display: none;
+  bottom: 0;
+  font-size: clamp(0.5rem, 0.2692307692rem + 0.9846153846vw, 0.7rem);
+  margin-bottom: 5px;
+  color: var(--clr-red);
+  font-style: italic;
+}
+main form #button {
+  border-radius: 25px;
+  padding-block: 0.6rem;
+  padding-inline: 2rem;
+  background-color: var(--clr-blue);
+  color: white;
+  font-size: clamp(0.5rem, 0.2692307692rem + 0.9846153846vw, 0.7rem);
+  height: -moz-max-content;
+  height: max-content;
+}
+main form #button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 2px 8px var(--clr-blue);
+}
+@media (min-width: 768px) {
+  main form #button {
+    width: 30%;
+  }
+}
+main .socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+main .socials li {
+  border: 1px solid var(--clr-gray);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+main .socials li:hover {
+  background-color: var(--clr-blue);
+}
+main .socials li:hover i {
+  color: white;
+}
+main .socials i {
+  color: var(--clr-blue);
+  font-size: 0.8rem;
+}
+main #copyright {
+  margin-top: 10px;
+  font-size: clamp(0.5rem, 0.2692307692rem + 0.9846153846vw, 0.7rem);
+  color: var(--clr-gray);
+}/*# sourceMappingURL=style.css.map */
