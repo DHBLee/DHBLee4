@@ -157,8 +157,8 @@ span {
   background-color: var(--clr-white);
   padding: 1rem;
   border-radius: 15px;
-  border: 1px solid var(--clr-gray950); /* Uniform border */
-  border-width: 1px 8px 8px 1px;
+  border: 1px solid;
+  box-shadow: 8px 8px 0 0 black;
 }
 .card #pic {
   border-radius: 10px;
