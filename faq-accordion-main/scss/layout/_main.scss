@@ -1,0 +1,64 @@
+.background {
+    position: absolute;
+    background-image: url('/faq-accordion-main/assets/images/background-pattern-mobile.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0;
+    height: 200px;
+
+    @media(min-width: 768px) {
+        background-image: url('/faq-accordion-main/assets/images/background-pattern-desktop.svg');
+    }
+}
+
+.flex-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.8rem;
+}
+
+.card {
+    margin-block: 8rem;
+    display: grid;
+    gap: 1rem;
+    width: calc(100% - 40px);
+    max-width: 602px;
+    background-color: var(--clr-white);
+    padding: clamp(1rem, -1.5862068965517242rem + 11.03448275862069vw, 2rem);
+    border-radius: 10px;
+    box-shadow: 0 1px 31px rgba(0, 0, 0, 0.3);
+}
+
+.faq {
+    display: grid;
+    gap: 1rem;
+}
+
+hr {
+    margin-block: 1rem;
+    border: none;
+    border-bottom: 1px solid var(--clr-pink)
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; 
+  }
+  
+
+.faq.active .answer {
+    max-height: 200px;
+}
+
+.faq.active .toggle-btn {
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease-out;
+}
+.toggle-btn {
+    transform: rotate(-0deg); 
+    transition: transform 0.3s ease-out;
+}
