@@ -1,0 +1,32 @@
+h1 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--clr-gray950);
+    transition: all 0.3s ease;
+    &:hover {
+        color: var(--clr-yellow);
+    }
+}
+h5 {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--clr-gray950);
+}
+h6 {
+    color: var(--clr-gray950);
+    font-weight: 500;
+}
+p {
+    font-size: 0.8rem;
+    color: var(--clr-gray500);
+    font-weight: 500;
+}
+span {
+    padding: 0.3rem 0.6rem;
+    color: var(--clr-gray950);
+    font-weight: 800;
+    font-size: 0.64rem;
+    background-color: var(--clr-yellow);
+    width: max-content;
+    border-radius: 3px;
+}

@@ -1,0 +1,26 @@
+.card {
+    display: grid;
+    gap: 0.7rem;
+    width: calc(100% - 40px);
+    max-width: 335.2px;
+    margin-block: 10rem;
+    background-color: var(--clr-white);
+    padding: 1rem;
+    border-radius: 15px;
+    border: 1px solid var(--clr-gray950); /* Uniform border */
+    border-width: 1px 8px 8px 1px;
+
+    #pic {
+        border-radius: 10px;
+        margin-bottom: 7px;
+    }
+    #profile {
+        width: 1.5rem;
+        margin-top: 7px;
+        &::after {
+            content: 'Greg Hooper';
+            color: var(--clr-gray950);
+            font-weight: 800;
+        }
+    }
+}
